@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage extends BasePage {
+public class LoginPage extends com.example.selenium.pages.BasePage {
 
     @FindBy (id = "username")
     private WebElement usernameLocator; //By usernameLocator = By.id("username");
@@ -29,8 +29,8 @@ public class LoginPage extends BasePage {
         return this;
     }
 
-    public MainPage clickLogin() {
+    public com.example.selenium.pages.MainPage clickLogin() {
         loginLocator.click(); //driver.findElement(loginLocator).click();
-        return new MainPage(driver);
+        return new com.example.selenium.pages.MainPage(driver);
     }
 }

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MainPage extends com.example.selenium.pages.BasePage {
+public class MainPage extends BasePage {
 
     @FindBy (css="h2")
     private static WebElement titleLocator; //private static By titleLocator = By.cssSelector("h2");
